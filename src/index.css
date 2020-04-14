@@ -1,13 +1,205 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: teal;
+  margin-top: 1rem;
 }
+
+/* Game Component style*/
+header {
+  margin: 4px;
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #fff;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  align-self: center;
+  text-transform: uppercase;
+  min-width: 50%;
+  min-height: 250px;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 1px  #fff,
+              10px 10px 2px #666,
+              15px 15px 4px #000;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.won{
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+  color: blue;
+  text-shadow: 4px 1px  coral;
+}
+
+.btn-secondary {
+  margin-top: -6px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  transform: scale(0.9);
+}
+
+.random-number {
+  position: relative;
+  display: flex;
+  padding: 5px 50px;
+  width: 100%;
+  height: 40px;
+  align-items: flex-start;
+  text-align: left;
+}
+.ran{
+  font-weight: bold;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  background: cornflowerblue;
+  border-radius: 15px;
+}
+span > strong {
+  font-size: 16px;
+
+}
+.num {
+  position: absolute;
+  right: 0;
+  padding-bottom: 10px;
+  padding-right: 28px;
+  align-self: flex-end;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-right: 14px;
+  background: transparent;
+}
+
+input {
+  text-decoration: none;
+  width: 80%;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  background: #fff;
+  color: rgb(37, 35, 35);
+  padding: 4px 0px;
+  margin: 10px 4px;
+  border-radius: 25px;
+  outline: none;
+}
+input:hover {
+  box-shadow: 0px 0 20px #eee; ;
+  transform: translateY(5px);
+}
+
+.fa-commenting {
+  color: #fff;
+  font-size: 1.5rem;
+  
+  margin-top: -20px;
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.message-box {
+  margin-top: 10px;
+}
+
+.container > span > button {
+  font-weight: 500;
+  margin: 0px 2px;
+}
+
+.container > span > button:hover {
+  transform: scale(1.2);
+  margin: 0 10px;
+}
+
+.msg {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 80%;
+  font-size: 24px;
+  line-height: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* sequence component style*/
+
+.comp {
+  position: absolute;
+  bottom: 0;
+  padding-top: 12px;
+  transform-origin: left;
+  transform: rotate(-90deg);
+
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.play {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: 12px;
+  transform-origin: right;
+  transform: rotate(90deg);
+
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+
+.computer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  padding: 5px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding: 5px;
+}
+.computer > span,
+.player > span {
+  margin: 2px 0;
+  padding: 0px 2px;
+  min-width: 20px;
+  height: 20px;
+  background-color: #000;
+  color: #fff;
+
+  box-shadow: 0 0 10px #f2f2f2;
+  border-radius: 35%;
+}     

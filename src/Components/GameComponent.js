@@ -74,7 +74,7 @@ function GameComponent() {
       }
 
       return (
-            <div className="container">
+            <div className="container1">
                   <h3 style={levelStyle(level)}>
                         <span style={{color:"#000"}}>LEVEL : </span>
                         {level}
@@ -103,7 +103,7 @@ function GameComponent() {
                               </button>
                         </div> :
                   
-                        <div className="container">
+                        <div className="container2">
                               <input onChange={handleChange} onKeyUp={checkInput} type="number" value = {selNum} />
                               <button onClick={checkStatus} className="btn btn-secondary">check</button>
                               <span>
@@ -128,9 +128,10 @@ function GameComponent() {
                   />
             </div>
             <div className="developer">
-                  <p>Developed by <kbd>charan</kbd></p>
-                  <p>open Source <code><strong>project</strong></code></p>
                   <p> <i class="fa fa-github" aria-hidden="true"></i> Gitub link <a target="_blank" href="https://github.com/charan-kr/guess-the-number"><i> Guess the number </i></a></p>
+                  <p>open Source <code><strong>project</strong></code></p>                  
+                  <p>Developed by <kbd>charan</kbd></p>
+
             </div>
       </div>
       )

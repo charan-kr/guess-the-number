@@ -127,6 +127,11 @@ function GameComponent() {
                         msg ={msg}
                   />
             </div>
+            <div className="developer">
+                  <p>Developed by <kbd>charan</kbd></p>
+                  <p>open Source <code><strong>project</strong></code></p>
+                  <p> <i class="fa fa-github" aria-hidden="true"></i> Gitub link <a target="_blank" href="https://github.com/charan-kr/guess-the-number"><i> Guess the number </i></a></p>
+            </div>
       </div>
       )
 }

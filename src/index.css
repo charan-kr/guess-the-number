@@ -136,12 +136,12 @@ input:hover {
   margin-top: 10px;
 }
 
-.container > span > button {
+.container2 > span > button {
   font-weight: 500;
   margin: 0px 2px;
 }
 
-.container > span > button:hover {
+.container2 > span > button:hover {
   transform: scale(1.2);
   margin: 0 10px;
 }
@@ -219,7 +219,6 @@ input:hover {
 .developer {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 2rem;
   align-self: flex-end;
   justify-content: start;
 
@@ -239,4 +238,10 @@ input:hover {
 .developer > p > a {
   opacity: 1;
   color: red;
+}
+
+@media only screen and (max-width : 400px) {
+  input {
+    width: 70%;
+  }
 }
